@@ -1,12 +1,16 @@
+.site-title{
+  font-family: "Satisfy", "Caveat", cursive;
+}
+
 .btn{
-	background-color: $orange;
+  background-color: $orange;
 
-	&:focus,
-	&:hover {
-		background-color: darken($orange, 5%);
-	}
+  &:focus,
+  &:hover {
+    background-color: darken($orange, 5%);
+  }
 
-	&:active{
-		background-color: $orange;
-	}
+  &:active{
+    background-color: $orange;
+  }
 }

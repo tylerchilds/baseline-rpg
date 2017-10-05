@@ -1,4 +1,5 @@
 @import"../_includes/bower_components/cutestrap/dist/scss/variables";
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700|Satisfy');
 
 $primary: #216a9e;
 $primary-dark: darken($primary, 10%);
@@ -12,7 +13,7 @@ $yellow: yellow;
 
 $purple: purple;
 
-$base-font: "Source Sans Pro", Verdana, Geneva, sans-serif;
-$monospace-font: "PT Mono", monospace;
+$base-font: Verdana, Geneva, sans-serif;
+$monospace-font: "Consolas", "Andale Mono", monospace;
 
-$heading: "PT Sans", Futura, "Trebuchet MS", Arial, sans-serif;
+$heading: "Caveat", "Century Gothic", "Trebuchet MS", sans-serif;
