@@ -1,16 +1,21 @@
-.site-title{
-  font-family: "Satisfy", "Caveat", cursive;
-}
-
 .btn{
-  background-color: $orange;
+
+  &:link,
+  &:visited{
+    background-color: $primary;
+  }
 
   &:focus,
   &:hover {
-    background-color: darken($orange, 5%);
+    background-color:  $primary-dark;
   }
 
   &:active{
-    background-color: $orange;
+    background-color:  $primary-light;
   }
+}
+
+.wrapper-page{
+  padding-bottom: 2.4rem;
+  padding-top: 2.4rem;
 }
