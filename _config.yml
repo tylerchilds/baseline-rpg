@@ -9,13 +9,9 @@
 title: Baseline RPG
 email: tylerwchilds@gmail.com
 description: >
-  This is the final destination for my personal website.
-  It's as complex as it will ever need to be and
-  there are better things for me to do, to learn and explore.
-  There's an entire world out there beyond the boxes
-  we tend to put everything into
+  A simple tabletop RPG, streamlined to have minimal startup time, low barrier to entry and extensible to adapt to any lore, fandom or mashup.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://tylerchilds.com" # the base hostname & protocol for your site
+url: "https://baseline.fyi" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
