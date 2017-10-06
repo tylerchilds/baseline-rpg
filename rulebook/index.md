@@ -25,12 +25,12 @@ Baseline is mostly a skeleton and a foundation; your role is to guide the player
 
 When players attempt to perform different actions, decide which stat they would be using for that task and ask them to roll a d20 (20-sided die) and this value is considered their natural roll. Add the stat value to their natural roll for the final result. You decide what a successful result is. As a suggestion anything above a 13 for a moderately difficult task is a good place to start.
 
-**Special Rolls:**  
+#### Special Rolls
 1 - Critical Fail - Player must subtract 1 from a stat.  
 20 - Critical Success - Player may add 1 to a stat.
 
 
-###Combat Encounters
+### Combat Encounters
 
 A turn is what can be accomplished by a character in the span of just a few seconds. Turn order moves clockwise from the player that was involved in the combat initiation. If that player attacked, then all players will have their turns before the enemies. If that player was attacked, then the enemies will go first.
 
