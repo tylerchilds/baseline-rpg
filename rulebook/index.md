@@ -6,7 +6,7 @@ description: Learn it
 weight: 10
 ---
 
-## Ruleset
+## Rulebook
 
 The core Baseline ruleset aims to emulate life on planet earth in the present day. This is to provide a really easy to understand world, which is useful for casual or first-time RPG players. Expansions can be added to provide additional attributes, races, enemies, weapons, equipment, etc.
 
@@ -53,6 +53,11 @@ Equipment can be armor for head, body or legs, shields, and other accessories. A
 ### Weapons
 
 Weapons are rated for distance, stat check and damage dice. Weapons will be one handed or two handed. Weapons that are one handed, may be dual-wielded.
+
+
+
+## Bestiary
+The bestiary is only a suggestion based on common enemies. Enemies will have different levels. For each level the enemy is below the character, subtract the difference from the enemy’s attack and defensive rolls. For each level the enemy is above the character, add the difference to the enemy’s attack and defensive rolls.
 
 
 
