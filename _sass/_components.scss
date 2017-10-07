@@ -1,5 +1,4 @@
 .btn{
-
   &:link,
   &:visited{
     background-color: $primary;
@@ -15,7 +14,56 @@
   }
 }
 
-.wrapper-page{
-  padding-bottom: 2.4rem;
-  padding-top: 2.4rem;
+.post-it{
+  background: $it-yellow;
+  box-shadow: 1px 2px 1px 0px rgba(0,0,0,.3);
+  margin-bottom: 2rem;
+  padding: 1.4rem 1rem;
+}
+
+.post-marker{
+  display: table;
+  font-family: $heading;
+  font-size: 2rem;
+  margin-left: -1rem;
+  margin-bottom: 1rem;
+  padding: .5rem 2rem .5rem 3.2rem;
+  transition: margin 100ms;
+
+  &:hover{
+    margin-left: -.5rem;
+  }
+}
+
+.post-marker:nth-child(1n){
+  background-color: $it-yellow;
+  box-shadow: 1px 1px 0px 0px darken($it-yellow, 50%);
+  transform: rotate(1deg);
+}
+
+.post-marker:nth-child(2n){
+  background-color: $it-pink;
+  box-shadow: 1px 1px 0px 0px darken($it-pink, 50%);
+  transform: rotate(-1deg);
+}
+
+.post-marker:nth-child(3n){
+  background-color: $it-green;
+  box-shadow: 1px 1px 0px 0px darken($it-green, 50%);
+}
+
+.post-marker:nth-child(4n){
+  background-color: $it-orange;
+  box-shadow: 1px 1px 0px 0px darken($it-orange, 50%);
+}
+
+.post-marker:nth-child(5n){
+  background-color: $it-blue;
+  box-shadow: 1px 1px 0px 0px darken($it-blue, 50%);
+}
+
+.post-marker.menu-toggle{
+  background-color: $it-green;
+  box-shadow: 1px 1px 0px 0px darken($it-green, 50%);
+  transform: rotate(0);
 }

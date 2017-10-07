@@ -2,6 +2,14 @@
 layout: default
 ---
 
-<section class="wrapper wrapper-page">
-  {{ content }}
+<section class="layout">
+  <nav class="sidebar">
+    {% include sidebar.html %}
+  </nav>
+
+  <main class="main">
+    <div class="main-wrapper">
+      {{ content }}
+    </div>
+  </main>
 </section>

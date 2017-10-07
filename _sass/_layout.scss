@@ -21,9 +21,27 @@ html{
 }
 
 body{
+  color: $black;
   overflow-x: hidden;
   @media screen and (min-width: 960px){
     padding-top: 7.2rem;
+  }
+}
+
+header{
+  a:link,
+  a:visited{
+    color: $primary;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus{
+    color: $primary-dark;
+  }
+
+  a:active{
+    color: $primary-light;
   }
 }
 
@@ -42,83 +60,89 @@ header{
     left: 0;
     z-index: $z_index-2;
   }
+}
 
-  h1{
-    float: left;
-    font-size: 3rem;
-    padding-bottom: 0;
-    padding: 0 1.2rem 0 0;
-    position: relative;
-    line-height: 4.8rem;
-    font-weight: 600;
+.logo{
+  float: left;
+  font-size: 3rem;
+  padding-bottom: 0;
+  padding: 0 1.2rem 0 0;
+  position: relative;
+  line-height: 4.8rem;
+  font-weight: 600;
+}
+
+.top-nav{
+  display: inline-block;
+}
+
+.top-nav a{
+  display: inline-block;
+  letter-spacing: 1px;
+  line-height: 4.8rem;
+  padding: 0 1.2rem;
+}
+
+.sidebar{
+  bottom: 1.2rem;
+  left: 0;
+  position: fixed;
+  top: auto;
+  z-index: $z_index-4;
+
+  @media screen and (min-width: 960px){
+    bottom: auto;
+    padding-top: 3.6rem;
+    top: 6rem;
   }
+}
 
-  nav{
-    display: inline-block;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-
-    a{
-      display: inline-block;
-      line-height: 4.8rem;
-      padding: 0 1.2rem;
-    }
-  }
-
-  a:link{
-    color: $primary;
-    text-decoration: none;
-  }
-
+.sidebar{
+  a:link,
   a:visited{
-    color: $primary;
+    color: $black;
+    text-decoration: none;
   }
 
   a:hover,
   a:focus{
-    color: $primary-dark;
+    color: darken($black, 15%);
   }
 
   a:active{
-    color: $primary-light;
+    color: lighten($black, 10%);
   }
 }
 
-.site-sub-nav{
-  background-color: $gray6;
-  border-bottom: 1px solid $gray5;
-  padding: 1.2rem;
-  font-size: $font-size--small;
-  margin-bottom: -1px;
-
-  a{
-    display: inline-block;
-    padding: 0 8px;
+.main{
+  @media screen and (min-width: 960px){
+    margin-left: 10%;
   }
 }
 
-.hero{
-  height: 24rem;
-  box-sizing: border-box;
+.menu{
+  left: -200px;
   position: relative;
-  z-index: 1;
-  box-shadow: 0 -1px 1px 0 rgba(0,0,0,.25) inset;
-  align-items: center;
-  text-align: center;
+  transition: left 200ms;
 
-  &:after{
-    position: absolute;
-    top: 0;
-    bottom: 0;
+  &.active{
     left: 0;
-    right: 0;
-    z-index: 1;
-    background-color: rgba(255,255,255,.75);
-    content: '';
   }
 
-  *{
-    position: relative;
-    z-index: 2;
+  @media screen and (min-width: 960px){
+    left: 0;
   }
+}
+
+.menu-toggle{
+  margin-top: 4.8rem;
+  @media screen and (min-width: 960px){
+    display: none !important;
+  }
+}
+
+.main-wrapper{
+  padding: 2.4rem 2rem;
+  margin: 0 auto;
+  max-width: 768px;
 }
