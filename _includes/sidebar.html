@@ -1,18 +1,16 @@
-<div class="menu">
-  {% assign pages = site.pages | sort: "weight" %}
-  {% for node in pages %}
-    {% if node.title and node.weight != 0 %}
-      {% assign node_url_parts = node.url | split: '/' %}
-      {% assign node_url_parts_size = node_url_parts | size %}
-      {% if node_url_parts_size == 2 %}
-        <a href="{{node.url}}" class="post-marker">{{node.title}}</a>
-      {% endif %}
+{% assign pages = site.pages | sort: "weight" %}
+{% for node in pages %}
+  {% if node.title and node.weight != 0 %}
+    {% assign node_url_parts = node.url | split: '/' %}
+    {% assign node_url_parts_size = node_url_parts | size %}
+    {% if node_url_parts_size == 2 %}
+      <a href="{{node.url}}" class="post-marker menu-item">{{node.title}}</a>
     {% endif %}
-  {% endfor %}
-  <a href="#" class="post-marker">Character</a>
-  <a href="#" class="post-marker">Creatures</a>
-  <a href="#" class="post-marker">Armory</a>
-  <a href="#" class="post-marker">Adventures</a>
-</div>
+  {% endif %}
+{% endfor %}
+<a href="#" class="post-marker menu-item">Character</a>
+<a href="#" class="post-marker menu-item">Creatures</a>
+<a href="#" class="post-marker menu-item">Armory</a>
+<a href="#" class="post-marker menu-item">Adventures</a>
 
-<a href="javascript:;" class="post-marker menu-toggle">Menu</a>
+<a href="javascript:;" class="post-marker" id="menu-toggle">Menu</a>

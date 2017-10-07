@@ -5,8 +5,8 @@
     el.addEventListener('click', window.print);
   })
 
-  document.querySelector('.menu-toggle').addEventListener('click', function(e) {
-    [].map.call(document.querySelectorAll('.menu'), function(el) {
+  document.querySelector('#menu-toggle').addEventListener('click', function(e) {
+    [].map.call(document.querySelectorAll('.sidebar'), function(el) {
 
       el.classList.toggle('active');
     });

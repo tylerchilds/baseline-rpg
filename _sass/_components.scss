@@ -24,15 +24,7 @@
 .post-marker{
   display: table;
   font-family: $heading;
-  font-size: 2rem;
-  margin-left: -1rem;
-  margin-bottom: 1rem;
-  padding: .5rem 2rem .5rem 3.2rem;
-  transition: margin 100ms;
-
-  &:hover{
-    margin-left: -.5rem;
-  }
+  padding: .5rem 2rem;
 }
 
 .post-marker:nth-child(1n){
@@ -62,8 +54,8 @@
   box-shadow: 1px 1px 0px 0px darken($it-blue, 50%);
 }
 
-.post-marker.menu-toggle{
-  background-color: $it-green;
-  box-shadow: 1px 1px 0px 0px darken($it-green, 50%);
+#menu-toggle{
+  background-color: $it-yellow;
+  box-shadow: 1px 1px 0px 0px darken($it-yellow, 50%);
   transform: rotate(0);
 }

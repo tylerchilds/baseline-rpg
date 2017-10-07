@@ -84,16 +84,21 @@ header{
 }
 
 .sidebar{
-  bottom: 1.2rem;
-  left: 0;
+  bottom: 7.2rem;
+  left: -200px;
   position: fixed;
-  top: auto;
+
+  transition: left 200ms;
   z-index: $z_index-4;
 
+  &.active{
+    left: 0;
+  }
+
   @media screen and (min-width: 960px){
+    left: 0;
+    top: 10.8rem;
     bottom: auto;
-    padding-top: 3.6rem;
-    top: 6rem;
   }
 }
 
@@ -120,22 +125,27 @@ header{
   }
 }
 
-.menu{
-  left: -200px;
-  position: relative;
-  transition: left 200ms;
+.menu-item{
+  display: table;
+  font-size: 2rem;
+  margin-left: -1rem;
+  margin-bottom: 1rem;
+  padding: .5rem 2rem .5rem 3.2rem;
+  transition: margin 100ms;
 
-  &.active{
-    left: 0;
-  }
-
-  @media screen and (min-width: 960px){
-    left: 0;
+  &:hover{
+    margin-left: -.5rem;
   }
 }
 
-.menu-toggle{
-  margin-top: 4.8rem;
+#menu-toggle{
+  top: 10.8rem;
+  font-size: 2.4rem;
+  margin: 0 -1rem 1rem  0;
+  padding: .5rem 4.4rem .5rem 2rem;
+  position: fixed;
+  right: 0;
+
   @media screen and (min-width: 960px){
     display: none !important;
   }
