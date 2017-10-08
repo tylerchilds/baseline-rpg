@@ -135,13 +135,18 @@ header{
 
 .menu-item{
   font-size: 2rem;
-  margin-left: -1rem;
   margin-bottom: 1rem;
-  transition: margin 100ms;
 
-  &:hover{
-    margin-left: -.5rem;
+  @media screen and (min-width: 768px){
+    margin-left: -1rem;
+    transition: margin 100ms;
+
+    &:hover{
+      margin-left: -.5rem;
+    }
   }
+
+
 }
 
 .menu-toggle-container{
