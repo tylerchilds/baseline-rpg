@@ -9,6 +9,10 @@
   gtag('config', 'UA-8248761-13');
 </script>
 
+{% if page.js_layout %}
+  <script src="{{ "/js/layout/" | prepend: site.baseurl }}{{ page.js_layout }}"></script>
+{% endif %}
+
 {% if page.js %}
   <script src="{{ "/js/pages/" | prepend: site.baseurl }}{{ page.js }}"></script>
 {% endif %}
