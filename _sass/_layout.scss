@@ -84,21 +84,25 @@ header{
 }
 
 .sidebar{
-  bottom: 7.2rem;
-  left: -200px;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   position: fixed;
-
-  transition: left 200ms;
+  text-align: center;
+  transition: bottom 200ms;
   z-index: $z_index-4;
 
   &.active{
-    left: 0;
+    bottom: 9.6rem;
   }
 
   @media screen and (min-width: 768px){
-    left: 0;
-    top: 10.8rem;
     bottom: auto;
+    left: 0;
+    right: auto;
+    text-align: left;
+    top: 10.8rem;
   }
 }
 
@@ -130,11 +134,9 @@ header{
 }
 
 .menu-item{
-  display: table;
   font-size: 2rem;
   margin-left: -1rem;
   margin-bottom: 1rem;
-  padding: .5rem 2rem .5rem 3.2rem;
   transition: margin 100ms;
 
   &:hover{
@@ -142,17 +144,21 @@ header{
   }
 }
 
-#menu-toggle{
-  top: 10.8rem;
-  font-size: 2.4rem;
-  margin: 0 -1rem 1rem  0;
-  padding: .5rem 4.4rem .5rem 2rem;
+.menu-toggle-container{
+  bottom: 3.6rem;
+  left: 0;
+  margin: 0 auto;
   position: fixed;
   right: 0;
 
   @media screen and (min-width: 768px){
     display: none !important;
   }
+}
+
+#menu-toggle{
+  font-size: 2.4rem;
+  padding: .5rem 2rem .5rem 2rem;
 }
 
 .main-wrapper{

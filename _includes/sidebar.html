@@ -4,9 +4,13 @@
     {% assign node_url_parts = node.url | split: '/' %}
     {% assign node_url_parts_size = node_url_parts | size %}
     {% if node_url_parts_size == 2 %}
-      <a href="{{node.url}}" class="post-marker menu-item">{{node.title}}</a>
+      <div class="menu-item">
+        <a href="{{node.url}}" class="post-marker">{{node.title}}</a>
+      </div>
     {% endif %}
   {% endif %}
 {% endfor %}
 
-<a href="javascript:;" class="post-marker" id="menu-toggle">Menu</a>
+<div class="menu-toggle-container">
+  <a href="javascript:;" class="post-marker" id="menu-toggle">Menu</a>
+</div>
