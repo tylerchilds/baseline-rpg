@@ -1,0 +1,32 @@
+---
+layout: page
+title: Characters
+permalink: /characters/
+description: Learn it
+weight: 20
+js: characters.js
+---
+
+<h2>Character Creation</h2>
+
+<div class="ta-center">
+  <div id="character-layout" style="display: none;">
+    <p id="character-name"></p>
+    <span id="character-strength"></span>
+    <span id="character-dexterity"></span>
+    <span id="character-intelligence"></span>
+  </div>
+  <a href="javascript:;" class="btn" id="create">
+    Random Character
+  </a>
+</div>
+
+<h3>Information</h3>
+
+<p>
+  Base characters are humans and they all have the same three attributes: Strength, Dexterity and Intelligence. These attributes are set initially by rolling 4d6 (Four 6 sided dice), removing the lowest value and average the rest, rounded down. After rolling for three stats, assign them to the attributes of your choice.
+</p>
+
+<p>
+  These three stats all contribute to player health. Whenever a player takes damage they must subtract the damage from stats of their choice, unless told otherwise. If all three stats reach zero, the character is dead.
+</p>
